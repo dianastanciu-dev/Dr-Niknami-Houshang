@@ -1,0 +1,530 @@
+*{
+    text-decoration: none;
+}
+
+body{
+background-color:#96C0B7;
+}
+
+header{
+background-color: #fff;
+width: 100%;
+height: 100px;
+}
+
+header .header-brand{
+font-family: Catamaran;
+font-size: 24px;
+font-weight: 900;
+color:#111;
+text-transform: uppercase;
+display:block;
+margin:0 auto;
+text-align:center;
+padding:20px 0;
+}
+
+header nav ul{
+display: block;
+margin:0 auto;
+width:fit-content;
+}
+
+header nav ul li{
+display: inline-block;
+float:left;/*Removes gap between links*/
+list-style: none;
+padding: 0 16px;
+}
+
+header nav ul li a{
+    font-family: Catamaran;
+    font-size: 16px;
+    font-weight:200px;
+    line-height: 20px;/*ADDED*/
+    color:#111;
+    text-transform: uppercase;
+    
+}
+ 
+a:hover{
+    color:#10b5d5;
+}
+h3.hovereffect:hover{
+ color:#10b5d5;
+}
+@media (min-width: 500px) and (max-width: 800px){
+header .header-contact{
+    display: none!important;
+}
+}
+
+
+header .header-contact{
+    display: block;
+    font-family: Catamaran;
+    font-size: 16px;
+    font-weight:200px;
+    line-height: 20px;
+    color:#111;
+    text-transform: uppercase;
+    border:1px solid #111;
+    float: right;
+    margin-right: 20px;
+    margin-top: 0px;
+    padding: 0px 10px 0px 10px;  
+}
+
+
+
+@media (max-width: 500px){
+    .sidebar-nav{
+        display:none;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    header .header-brand{
+        margin:31px 0;
+        text-align:left;
+        padding:0px 20px 0 40px;
+        border-right: 3px solid #111;
+        float:left;
+        line-height:38px;
+        }
+
+        header nav ul{
+            margin:20px 0;
+            float: left;
+        }
+        
+        
+        header nav ul li a{
+            line-height: 60px;
+        }
+        header .header-contact{
+            display: block;
+            font-family: Catamaran;
+            font-size: 16px;
+            font-weight:200px;
+            line-height: 40px;
+            color:#111;
+            text-transform: uppercase;
+            border:1px solid #111;
+            float:right;
+            margin-right: 40px;
+            margin-top: 30px;
+            padding: 0px 10px 0px 10px;  
+        }
+        
+}
+
+
+
+
+.index-banner{
+    width:100%;
+    height:calc(100vh - 140px);
+    background-image: url('index1M.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table; /*Let the element behave like a <table> element*/
+}
+
+.vertical-center{
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.index-banner h2{
+    font-family: Catamaran;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;/*h-shadow v-shadow blur-radius color*/
+}
+
+.index-banner h1{
+    font-family: Cormorant Garamond;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 40px;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;/*h-shadow v-shadow blur-radius color*/
+
+}
+
+.index-links div{
+    margin: 16px 16px 0;
+    width:100%-32px;
+    height:100px;
+    background-color:#f2f2f2;
+}   
+
+.index-links div h3{
+    font-family: Catamaran;
+    font-size: 28px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 600;
+    color:#111;
+    text-transform: uppercase;
+    
+}
+
+
+@media only screen and (min-width:1000px){
+
+    .index-banner{
+        width:100%;
+        height:450px;
+    }
+    .wrapper{
+        width:1000px;
+        margin:0 auto;
+    }
+
+    .index-links{
+        overflow: hidden;
+    }
+
+    .index-links div{
+        margin: 20px 10px 0;
+        height:230px; 
+        background-color:#f2f2f2;
+        float: left;
+    } 
+
+    .index-boxlink-square{
+        width: calc(25% - 20px)!important;
+
+    }
+
+    .index-boxlink-rectangle{
+        width: calc(50% - 20px)!important;
+
+    }
+
+    .index-links div h3{
+        line-height: 200px;
+        font-weight: 500;
+       
+    }
+}
+
+
+/*MAP*/
+
+.map-responsive{
+   overflow:hidden;
+   padding-bottom:40%;
+   position:relative;
+   height:0;
+   margin-top:20px;
+  }
+.map-responsive iframe{
+      left:0;
+   top:0;
+   height:100%;
+   width:100%;
+   position:absolute;
+  }
+       
+
+/*FOOTER*/
+
+footer{
+    width:calc(100%-80px);
+    padding:40px 40px ;
+    background-color: #d0cbc5;
+    overflow:hidden;
+}
+
+footer ul{
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+
+}
+
+footer ul li{
+    display: block;
+    list-style: none;
+}
+
+footer ul li a{
+    font-family: Catamaran;
+    font-size: 22px;
+    font-weight: 550; /*!! NO PX*/
+    line-height: 30px;
+    color:#111;
+}
+
+.footer-sm{
+    width: fit-content;
+    float: right;
+    padding-left: 20px;   
+}
+
+.footer-sm li{
+    display: block;
+    list-style: none;
+}
+
+.footer-sm li a{
+    font-family: Catamaran;
+    font-size: 22px;
+    line-height: 30px;
+    color:#fff;
+}
+
+.footer-links-p{
+    font-family: Catamaran;
+    font-size: 22px;
+    font-weight: 550; /*!! NO PX*/
+    line-height: 30px;
+    color:#111;   
+} 
+
+.footer-links-main li a{
+    text-decoration: underline;
+}
+@media only screen and (min-width:1000px){
+
+footer{
+    font-size: 18px!important;
+    
+}
+
+.footer-links-main{
+    padding-right:50px;
+}
+
+.footer-locations{
+    padding-top:75px;
+}
+
+}
+
+
+/*N FERI PAGE*/
+.feri-image{
+    width:100%;
+    /*height:calc(100vh - 200px);*/
+    height: auto;
+}
+.feri-text{
+    float:center;
+    margin-top:30px;
+    font-family: Catamaran;
+    font-size:18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.feri-ortodontist{
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.feri-title{
+  text-transform: uppercase;
+}
+@media only screen and (min-width:1000px){
+
+.feri-text{
+    padding:20px 20px 0 0;
+    width: calc(100% - 532px);
+    float: left;
+}
+.feri-image{
+    margin-top: 30px;
+    width: 512px!important;
+    height:768px;
+   
+}
+}
+
+/*SMILES PAGE*/
+
+
+.smile-title{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+.smile-imagebox{
+   margin-top: 30px;
+   padding: 0 40px 0 40px;
+}    
+.smile-imagebox img{   /*CENTER IMAGE USED HERE.class {display: block; margin-left: auto; margin-right: auto; width: PERCENT WANTED;}*/
+   width: 70%;
+   margin-bottom: 10px;
+   /*height: calc(20vh-100px);*/  
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+}
+/*
+.smile-imagebox-si{
+    width: 100%!important;
+    margin-bottom:10px;
+    height: calc(20vh-100px);  
+}*/
+
+.smile-text{
+    float:center;
+    margin-top:30px;
+    font-family: Catamaran;
+    font-size:18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media only screen and (min-width:1000px){
+
+p.clear {
+    clear: both;/*No floating elements allowed on either the left or the right side*/
+      /*!! NO SPACE BEFORE "."*/
+}
+
+.smile-imagebox{
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    
+   
+}
+
+.smile-imagebox img{
+    margin: 10px 10px 0 auto;
+    width: auto;
+    height: calc(30% - 20px);
+    float: left;
+    display: inline;
+}
+
+.smile p{   
+    display: block;
+    margin:0 auto;
+}
+}
+
+/*PRICES PAGE*/
+
+.prices-title{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    line-height: 40px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+.prices-image1{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
+    height: 30vh;
+}
+.prices-image2{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    height: 30vh;
+}
+.prices-image3{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width:90%;
+    height: 30vh;
+}
+
+
+.pricesProduct{
+    font-family: Catamaran;
+    font-size: 20px;
+    font-weight:600px;
+    line-height: 20px;/*ADDED*/
+    color:#111;
+    text-transform: uppercase;
+    text-align: center;
+}
+.pricesSum{
+    font-family: Catamaran;
+    font-size: 19px;
+    font-weight:600px;
+    line-height: 20px;/*ADDED*/
+    color:#111;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1000px){
+/* Create two equal columns that floats next to each other */
+.column {
+        float: left;
+        width: 30%;
+        padding: 15px;
+        padding-top: 30px;
+      
+
+    }
+/* Clear floats after the columns */
+.row:after {
+        content: "";/*NOTHIN AFTER THIS ROW?*/
+        display: table;
+        clear: both;
+         
+} 
+.prices-image1{
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        height: auto;
+        }
+.prices-image2{
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        height: auto;
+    }
+.prices-image3{
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        height: auto;
+        
+}
+    
+p.clear{
+        clear: both;
+    }
+.pricesProduct{
+        padding-top: 20px;
+        text-align: left;
+    }
+.pricesSum{
+        text-align: left;
+    }
+
+}
+
+
